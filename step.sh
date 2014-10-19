@@ -33,4 +33,4 @@ else
 	echo_string_to_formatted_output "* see the logs for more details"
 fi
 
-exit 0
+exit ${curl_res}
