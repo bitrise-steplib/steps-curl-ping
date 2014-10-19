@@ -1,4 +1,5 @@
-steps-curl-ping
+cURL Ping Step
 ===============
 
-A simple cURL ping step, reports success
+Performs a [cURL](http://curl.haxx.se/) request on the given URL
+and reports the result (success / failed) of the response.
