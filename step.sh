@@ -30,7 +30,7 @@ if [ ${curl_res} -eq 0 ]; then
 else
 	write_section_to_formatted_output "# Error"
 	echo_string_to_formatted_output "* cURL ping returned an error (${curl_res})"
-	echo_string_to_formatted_output "* see the logs for more details"
+	echo_string_to_formatted_output "* see the logs for more details" false
 fi
 
 exit ${curl_res}
