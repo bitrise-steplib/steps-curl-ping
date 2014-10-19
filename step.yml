@@ -15,7 +15,7 @@ requires_admin_user: false
 
 inputs:
   - title: |
-      Full URL (including http:// or https://)
+      Full URL
     mapped_to: PING_URL
   - title: |
       (optional) cURL parameters (like: `-d 'key=some_data'`)
