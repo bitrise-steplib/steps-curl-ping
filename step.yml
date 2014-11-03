@@ -1,8 +1,8 @@
+---
 name: Ping an URL with cURL
 description: |
   Performs a [cURL](http://curl.haxx.se/) request on the given URL
   and reports the result (success / failed) of the response.
-  
 website: https://github.com/bitrise-io/steps-curl-ping
 source:
   git: https://github.com/bitrise-io/steps-curl-ping.git
