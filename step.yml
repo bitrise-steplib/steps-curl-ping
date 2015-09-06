@@ -30,7 +30,8 @@ inputs:
       is_dont_change_value: false
   - curl_params: ""
     opts:
-      title: (optional) cURL parameters (like: `-d 'key=some_data'`)
+      title: |-
+        (optional) cURL parameters (like: '-dx 'key=some_data'')
       description: ""
       summary: ""
       is_expand: false
