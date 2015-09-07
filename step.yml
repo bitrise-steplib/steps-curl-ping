@@ -13,7 +13,6 @@ type_tags:
   - web
   - utils
   - ping
-requires_admin_user: false
 is_requires_admin_user: false
 is_always_run: false
 is_skippable: false
@@ -31,8 +30,9 @@ inputs:
   - curl_params: ""
     opts:
       title: |-
-        (optional) cURL parameters (like: '-dx 'key=some_data'')
-      description: ""
+        (optional) cURL parameters
+      description: |-
+        cURL parameters (like: `-dx 'key=some_data'`)
       summary: ""
       is_expand: false
       is_required: false
