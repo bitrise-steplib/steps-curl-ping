@@ -8,21 +8,21 @@ source "${THIS_SCRIPTDIR}/_formatted_output.sh"
 echo "" > "${formatted_output_file_path}"
 
 write_section_start_to_formatted_output "# Info"
-echo_string_to_formatted_output "* Pinging: \`${PING_URL}\`"
-if [ -z "${OPTIONAL_CURL_PARAMS}" ]; then
+echo_string_to_formatted_output "* Pinging: \`${ping_url}\`"
+if [ -z "${curl_params}" ]; then
 	echo_string_to_formatted_output "* No Optional cURL parameters (empty)"
 else
-	echo_string_to_formatted_output "* Optional cURL parameters: \`${OPTIONAL_CURL_PARAMS}\`"
+	echo_string_to_formatted_output "* Optional cURL parameters: \`${curl_params}\`"
 fi
 
-if [ -z "${PING_URL}" ]; then
+if [ -z "${ping_url}" ]; then
 	write_section_to_formatted_output "# Error"
-	write_section_start_to_formatted_output '* Required input `$PING_URL` not provided!'
+	write_section_start_to_formatted_output '* Required input `$ping_url` not provided!'
 	exit 1
 fi
 
 # eval to split the combined params
-eval curl -f ${PING_URL} ${OPTIONAL_CURL_PARAMS}
+eval curl -f ${ping_url} ${curl_params}
 curl_res=$?
 
 if [ ${curl_res} -eq 0 ]; then
