@@ -5,8 +5,7 @@ The new cURL Ping step.
 Performs a [cURL](http://curl.haxx.se/) request on the given URL
 and reports the result (success / failed) of the response.
 
-This Step is part of the [Open StepLib](http://www.steplib.com/), you can find its StepLib page [here](http://www.steplib.com/step/curl-ping).
-
+Find our integrations on Bitrise [integration page](https://www.bitrise.io/integrations/steps) and please find Bitrise StepLib sources on [this](https://github.com/bitrise-io/bitrise-steplib) URL.
 
 Can be run directly with the [bitrise CLI](https://github.com/bitrise-io/bitrise),
 just `git clone` this repository, `cd` into it's folder in your Terminal/Command Line
