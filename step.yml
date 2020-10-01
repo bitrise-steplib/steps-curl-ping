@@ -8,11 +8,10 @@ source_code_url: https://github.com/bitrise-steplib/steps-curl-ping
 support_url: https://github.com/bitrise-steplib/steps-curl-ping/issues
 host_os_tags:
   - osx-10.9
-project_type_tags: []
-type_tags:
+project_type_tags:
   - web
-  - utils
-  - ping
+type_tags:
+  - utility
 is_requires_admin_user: false
 is_always_run: false
 is_skippable: false
